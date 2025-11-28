@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Anuncio - WallapopClone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+    <nav class="bg-teal-500 p-4 shadow-md text-white mb-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold"><a href="index.html">WallapopClone</a></h1>
+            <a href="index.html" class="hover:underline">Cancelar y Volver</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 max-w-2xl">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Publicar nuevo anuncio</h2>
+
+            <div id="mensaje-feedback" class="hidden mb-4 p-4 rounded"></div>
+
+            <form id="form-crear-anuncio" class="space-y-4">
+
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">Nombre del producto *</label>
+                    <input type="text" name="nombre" class="w-full border rounded px-3 py-2 focus:outline-teal-500"
+                        required>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">Descripción *</label>
+                    <textarea name="descripcion" rows="4" class="w-full border rounded px-3 py-2 focus:outline-teal-500"
+                        required></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">Precio (€) *</label>
+                    <input type="number" name="precio" step="0.01"
+                        class="w-full border rounded px-3 py-2 focus:outline-teal-500" required>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">Tipo de anuncio *</label>
+                    <select name="tipo" class="w-full border rounded px-3 py-2 focus:outline-teal-500">
+                        <option value="venta">Venta (Quiero vender esto)</option>
+                        <option value="compra">Compra (Busco comprar esto)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-bold mb-2">URL de la Foto (Opcional)</label>
+                    <input type="url" name="foto" placeholder="https://..."
+                        class="w-full border rounded px-3 py-2 focus:outline-teal-500">
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 rounded transition mt-4">
+                    Publicar Anuncio
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/crear-anuncio.js"></script>
+</body>
+
+</html>

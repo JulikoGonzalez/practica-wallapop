@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - WallapopClone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold text-center mb-6 text-teal-600">Crear Cuenta</h1>
+
+        <div id="mensaje-feedback" class="hidden px-4 py-3 rounded mb-4"></div>
+
+        <form id="form-registro" class="space-y-4">
+            <div>
+                <label class="block text-gray-700 text-sm font-bold mb-2">Elige un Usuario</label>
+                <input type="text" id="username"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    required>
+            </div>
+            <div>
+                <label class="block text-gray-700 text-sm font-bold mb-2">Elige una Contraseña</label>
+                <input type="password" id="password"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    required>
+            </div>
+
+            <button type="submit"
+                class="w-full bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition">
+                Registrarse
+            </button>
+        </form>
+
+        <p class="mt-4 text-center text-sm text-gray-600">
+            ¿Ya tienes cuenta? <a href="login.html" class="text-teal-500 hover:underline">Inicia sesión</a>
+        </p>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Anuncio - WallapopClone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+    <nav class="bg-teal-500 p-4 shadow-md text-white mb-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold"><a href="index.html">WallapopClone</a></h1>
+            <div>
+                <a href="index.html" class="hover:underline">Volver al listado</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 max-w-4xl">
+
+        <div id="mensaje-feedback" class="text-center text-xl text-gray-600 hidden my-10"></div>
+
+        <div id="detalle-anuncio" class="bg-white rounded-lg shadow-lg overflow-hidden hidden">
+        </div>
+
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/detalle.js"></script>
+</body>
+
+</html>
